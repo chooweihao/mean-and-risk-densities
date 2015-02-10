@@ -1,27 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2012.8.5)  8 FEB 2015 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.18)  10 FEB 2015 17:09
 entering extended mode
-**C:/Users/Admin/Documents/GitHub/mean*and*risk*densities/Risk*decomposition.te
-x
-
-("C:/Users/Admin/Documents/GitHub/mean and risk densities/Risk decomposition.te
-x"
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\elsarticle\elsarticle.cls"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"Risk decomposition.tex"
+(./Risk decomposition.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -36,49 +27,57 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@tnote=\count87
-\c@fnote=\count88
-\c@cnote=\count89
-\c@ead=\count90
-\c@author=\count91
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
 \@eadauthor=\toks15
-\c@affn=\count92
+\c@affn=\count93
 \absbox=\box26
 \keybox=\box27
 \Columnwidth=\dimen106
@@ -90,33 +89,35 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-("C:\Users\Admin\Documents\GitHub\mean and risk densities\Risk decomposition.sp
-l") ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(./Risk decomposition.spl)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count93
+\c@NAT@ctr=\count94
 )
 \splwrite=\write3
+\openout3 = `"Risk decomposition.spl"'.
+
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen109
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\comment\comment.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
 
-Excluding comment 'comment')
-("C:\Users\Admin\Documents\GitHub\mean and risk densities\Risk decomposition.au
-x")
+Excluding comment 'comment') (./Risk decomposition.aux)
+\openout1 = `"Risk decomposition.aux"'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
@@ -129,72 +130,266 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen110
+\scratchbox=\box30
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen111
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks19
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for U+msa on input line 95.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
- [2] [3] [4] [5]
-File: meancont.eps Graphic file (type eps)
+ [2] [3] [4]
+[5]
+Package epstopdf Info: Source file: <meancont.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 53784 bytes
+(epstopdf)             Output file: <meancont-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:06:56
+(epstopdf)                    size: 26780 bytes
+(epstopdf)             Command: <repstopdf --outfile=meancont-eps-converted-to.
+pdf meancont.eps>
+(epstopdf)             \includegraphics on input line 254.
+Package epstopdf Info: Output file is already uptodate.
+ <meancont-eps-converted-to.pdf, id=33, 505.89pt x 505.89pt>
+File: meancont-eps-converted-to.pdf Graphic file (type pdf)
 
-<meancont.eps>
-Overfull \hbox (8.43869pt too wide) in paragraph at lines 253--256
- [][] 
+<use meancont-eps-converted-to.pdf>
+Package pdftex.def Info: meancont-eps-converted-to.pdf used on input line 254.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (8.43785pt too wide) in paragraph at lines 253--256
+ [] 
  []
 
-[6] [7] [8] [9] [10]
-File: unirisk.eps Graphic file (type eps)
- <unirisk.eps>
-File: exprisk.eps Graphic file (type eps)
- <exprisk.eps>
-File: parrisk.eps Graphic file (type eps)
- <parrisk.eps>
-File: weirisk.eps Graphic file (type eps)
- <weirisk.eps>
-Overfull \hbox (11.77202pt too wide) in paragraph at lines 412--418
- [][] 
+[6] [7 <./meancont-eps-converted-to.pdf>] [8] [9] [10]
+Package epstopdf Info: Source file: <unirisk.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 68820 bytes
+(epstopdf)             Output file: <unirisk-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:06:57
+(epstopdf)                    size: 26711 bytes
+(epstopdf)             Command: <repstopdf --outfile=unirisk-eps-converted-to.p
+df unirisk.eps>
+(epstopdf)             \includegraphics on input line 413.
+Package epstopdf Info: Output file is already uptodate.
+
+<unirisk-eps-converted-to.pdf, id=64, 505.89pt x 505.89pt>
+File: unirisk-eps-converted-to.pdf Graphic file (type pdf)
+
+<use unirisk-eps-converted-to.pdf>
+Package pdftex.def Info: unirisk-eps-converted-to.pdf used on input line 413.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+Package epstopdf Info: Source file: <exprisk.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 57282 bytes
+(epstopdf)             Output file: <exprisk-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:06:58
+(epstopdf)                    size: 17167 bytes
+(epstopdf)             Command: <repstopdf --outfile=exprisk-eps-converted-to.p
+df exprisk.eps>
+(epstopdf)             \includegraphics on input line 414.
+Package epstopdf Info: Output file is already uptodate.
+
+<exprisk-eps-converted-to.pdf, id=65, 505.89pt x 505.89pt>
+File: exprisk-eps-converted-to.pdf Graphic file (type pdf)
+
+<use exprisk-eps-converted-to.pdf>
+Package pdftex.def Info: exprisk-eps-converted-to.pdf used on input line 414.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+Package epstopdf Info: Source file: <parrisk.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 65883 bytes
+(epstopdf)             Output file: <parrisk-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:06:59
+(epstopdf)                    size: 26183 bytes
+(epstopdf)             Command: <repstopdf --outfile=parrisk-eps-converted-to.p
+df parrisk.eps>
+(epstopdf)             \includegraphics on input line 415.
+Package epstopdf Info: Output file is already uptodate.
+
+<parrisk-eps-converted-to.pdf, id=66, 505.89pt x 505.89pt>
+File: parrisk-eps-converted-to.pdf Graphic file (type pdf)
+
+<use parrisk-eps-converted-to.pdf>
+Package pdftex.def Info: parrisk-eps-converted-to.pdf used on input line 415.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+Package epstopdf Info: Source file: <weirisk.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 68726 bytes
+(epstopdf)             Output file: <weirisk-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:07:01
+(epstopdf)                    size: 26635 bytes
+(epstopdf)             Command: <repstopdf --outfile=weirisk-eps-converted-to.p
+df weirisk.eps>
+(epstopdf)             \includegraphics on input line 416.
+Package epstopdf Info: Output file is already uptodate.
+
+<weirisk-eps-converted-to.pdf, id=67, 505.89pt x 505.89pt>
+File: weirisk-eps-converted-to.pdf Graphic file (type pdf)
+
+<use weirisk-eps-converted-to.pdf>
+Package pdftex.def Info: weirisk-eps-converted-to.pdf used on input line 416.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (11.77116pt too wide) in paragraph at lines 412--418
+ [] 
  []
 
-[11] [12] [13] [14] [15]
-File: shortfallcap.eps Graphic file (type eps)
- <shortfallcap.eps>
-File: varcap.eps Graphic file (type eps)
- <varcap.eps>
-Overfull \hbox (11.77202pt too wide) in paragraph at lines 560--564
- [][] 
+[11] [12 <./unirisk-eps-converted-to.pdf> <./exprisk-eps-converted-to.pdf> <./p
+arrisk-eps-converted-to.pdf> <./weirisk-eps-converted-to.pdf>] [13] [14]
+[15]
+Package epstopdf Info: Source file: <shortfallcap.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 39091 bytes
+(epstopdf)             Output file: <shortfallcap-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:07:02
+(epstopdf)                    size: 14942 bytes
+(epstopdf)             Command: <repstopdf --outfile=shortfallcap-eps-converted
+-to.pdf shortfallcap.eps>
+(epstopdf)             \includegraphics on input line 561.
+Package epstopdf Info: Output file is already uptodate.
+ <shortfallcap-eps-converted-to.pdf, id=142, 505.89pt x 505.89pt>
+File: shortfallcap-eps-converted-to.pdf Graphic file (type pdf)
+
+<use shortfallcap-eps-converted-to.pdf>
+Package pdftex.def Info: shortfallcap-eps-converted-to.pdf used on input line 5
+61.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+Package epstopdf Info: Source file: <varcap.eps>
+(epstopdf)                    date: 2015-02-10 17:03:24
+(epstopdf)                    size: 39180 bytes
+(epstopdf)             Output file: <varcap-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-10 17:07:03
+(epstopdf)                    size: 13807 bytes
+(epstopdf)             Command: <repstopdf --outfile=varcap-eps-converted-to.pd
+f varcap.eps>
+(epstopdf)             \includegraphics on input line 562.
+Package epstopdf Info: Output file is already uptodate.
+
+<varcap-eps-converted-to.pdf, id=143, 505.89pt x 505.89pt>
+File: varcap-eps-converted-to.pdf Graphic file (type pdf)
+
+<use varcap-eps-converted-to.pdf>
+Package pdftex.def Info: varcap-eps-converted-to.pdf used on input line 562.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (11.77116pt too wide) in paragraph at lines 560--564
+ [] 
  []
 
-[16] [17] [18] [19] [20]
-("C:\Users\Admin\Documents\GitHub\mean and risk densities\Risk decomposition.bb
-l") [21]
-("C:\Users\Admin\Documents\GitHub\mean and risk densities\Risk decomposition.au
-x") )
+[16] [17 <./shortfallcap-eps-converted-to.pdf> <./varcap-eps-converted-to.pdf>]
+[18] [19] [20] (./Risk decomposition.bbl) [21] (./Risk decomposition.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 1380 strings out of 493922
- 17255 string characters out of 3147306
- 73768 words of memory out of 3000000
- 4666 multiletter control sequences out of 15000+200000
- 10950 words of font info for 42 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 32i,10n,34p,1014b,1815s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 2341 strings out of 493117
+ 32709 string characters out of 6135432
+ 99552 words of memory out of 5000000
+ 5751 multiletter control sequences out of 15000+600000
+ 10950 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,13n,34p,960b,2587s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "Risk decomposition.pdf" (21 pages, 411101 bytes).
+PDF statistics:
+ 245 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on "Risk decomposition.dvi" (21 pages, 86780 bytes).
