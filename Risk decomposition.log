@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.18)  10 FEB 2015 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.18)  12 FEB 2015 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,16 +205,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
- [2] [3] [4]
-[5]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+ [2] [3]
+Excluding 'comment' comment. Excluding 'comment' comment. [4]
 Package epstopdf Info: Source file: <meancont.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
 (epstopdf)                    size: 53784 bytes
@@ -223,20 +223,26 @@ Package epstopdf Info: Source file: <meancont.eps>
 (epstopdf)                    size: 26780 bytes
 (epstopdf)             Command: <repstopdf --outfile=meancont-eps-converted-to.
 pdf meancont.eps>
-(epstopdf)             \includegraphics on input line 254.
+(epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
- <meancont-eps-converted-to.pdf, id=33, 505.89pt x 505.89pt>
+
+<meancont-eps-converted-to.pdf, id=30, 505.89pt x 505.89pt>
 File: meancont-eps-converted-to.pdf Graphic file (type pdf)
 
 <use meancont-eps-converted-to.pdf>
-Package pdftex.def Info: meancont-eps-converted-to.pdf used on input line 254.
+Package pdftex.def Info: meancont-eps-converted-to.pdf used on input line 266.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (8.43785pt too wide) in paragraph at lines 253--256
+Overfull \hbox (8.43785pt too wide) in paragraph at lines 265--268
  [] 
  []
 
-[6] [7 <./meancont-eps-converted-to.pdf>] [8] [9] [10]
+[5] [6 <./meancont-eps-converted-to.pdf>] [7] [8]
+
+LaTeX Warning: Reference `differentiate' on page 9 undefined on input line 347.
+
+
+[9] [10]
 Package epstopdf Info: Source file: <unirisk.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
 (epstopdf)                    size: 68820 bytes
@@ -245,14 +251,13 @@ Package epstopdf Info: Source file: <unirisk.eps>
 (epstopdf)                    size: 26711 bytes
 (epstopdf)             Command: <repstopdf --outfile=unirisk-eps-converted-to.p
 df unirisk.eps>
-(epstopdf)             \includegraphics on input line 413.
+(epstopdf)             \includegraphics on input line 426.
 Package epstopdf Info: Output file is already uptodate.
-
-<unirisk-eps-converted-to.pdf, id=64, 505.89pt x 505.89pt>
+ <unirisk-eps-converted-to.pdf, id=64, 505.89pt x 505.89pt>
 File: unirisk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use unirisk-eps-converted-to.pdf>
-Package pdftex.def Info: unirisk-eps-converted-to.pdf used on input line 413.
+Package pdftex.def Info: unirisk-eps-converted-to.pdf used on input line 426.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 Package epstopdf Info: Source file: <exprisk.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
@@ -262,14 +267,14 @@ Package epstopdf Info: Source file: <exprisk.eps>
 (epstopdf)                    size: 17167 bytes
 (epstopdf)             Command: <repstopdf --outfile=exprisk-eps-converted-to.p
 df exprisk.eps>
-(epstopdf)             \includegraphics on input line 414.
+(epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
 
 <exprisk-eps-converted-to.pdf, id=65, 505.89pt x 505.89pt>
 File: exprisk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use exprisk-eps-converted-to.pdf>
-Package pdftex.def Info: exprisk-eps-converted-to.pdf used on input line 414.
+Package pdftex.def Info: exprisk-eps-converted-to.pdf used on input line 427.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 Package epstopdf Info: Source file: <parrisk.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
@@ -279,14 +284,14 @@ Package epstopdf Info: Source file: <parrisk.eps>
 (epstopdf)                    size: 26183 bytes
 (epstopdf)             Command: <repstopdf --outfile=parrisk-eps-converted-to.p
 df parrisk.eps>
-(epstopdf)             \includegraphics on input line 415.
+(epstopdf)             \includegraphics on input line 428.
 Package epstopdf Info: Output file is already uptodate.
 
 <parrisk-eps-converted-to.pdf, id=66, 505.89pt x 505.89pt>
 File: parrisk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use parrisk-eps-converted-to.pdf>
-Package pdftex.def Info: parrisk-eps-converted-to.pdf used on input line 415.
+Package pdftex.def Info: parrisk-eps-converted-to.pdf used on input line 428.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 Package epstopdf Info: Source file: <weirisk.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
@@ -296,23 +301,22 @@ Package epstopdf Info: Source file: <weirisk.eps>
 (epstopdf)                    size: 26635 bytes
 (epstopdf)             Command: <repstopdf --outfile=weirisk-eps-converted-to.p
 df weirisk.eps>
-(epstopdf)             \includegraphics on input line 416.
+(epstopdf)             \includegraphics on input line 429.
 Package epstopdf Info: Output file is already uptodate.
 
 <weirisk-eps-converted-to.pdf, id=67, 505.89pt x 505.89pt>
 File: weirisk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use weirisk-eps-converted-to.pdf>
-Package pdftex.def Info: weirisk-eps-converted-to.pdf used on input line 416.
+Package pdftex.def Info: weirisk-eps-converted-to.pdf used on input line 429.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (11.77116pt too wide) in paragraph at lines 412--418
+Overfull \hbox (11.77116pt too wide) in paragraph at lines 425--431
  [] 
  []
 
 [11] [12 <./unirisk-eps-converted-to.pdf> <./exprisk-eps-converted-to.pdf> <./p
 arrisk-eps-converted-to.pdf> <./weirisk-eps-converted-to.pdf>] [13] [14]
-[15]
 Package epstopdf Info: Source file: <shortfallcap.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
 (epstopdf)                    size: 39091 bytes
@@ -321,14 +325,15 @@ Package epstopdf Info: Source file: <shortfallcap.eps>
 (epstopdf)                    size: 14942 bytes
 (epstopdf)             Command: <repstopdf --outfile=shortfallcap-eps-converted
 -to.pdf shortfallcap.eps>
-(epstopdf)             \includegraphics on input line 561.
+(epstopdf)             \includegraphics on input line 574.
 Package epstopdf Info: Output file is already uptodate.
- <shortfallcap-eps-converted-to.pdf, id=142, 505.89pt x 505.89pt>
+
+<shortfallcap-eps-converted-to.pdf, id=139, 505.89pt x 505.89pt>
 File: shortfallcap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use shortfallcap-eps-converted-to.pdf>
 Package pdftex.def Info: shortfallcap-eps-converted-to.pdf used on input line 5
-61.
+74.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 Package epstopdf Info: Source file: <varcap.eps>
 (epstopdf)                    date: 2015-02-10 17:03:24
@@ -338,34 +343,38 @@ Package epstopdf Info: Source file: <varcap.eps>
 (epstopdf)                    size: 13807 bytes
 (epstopdf)             Command: <repstopdf --outfile=varcap-eps-converted-to.pd
 f varcap.eps>
-(epstopdf)             \includegraphics on input line 562.
+(epstopdf)             \includegraphics on input line 575.
 Package epstopdf Info: Output file is already uptodate.
 
-<varcap-eps-converted-to.pdf, id=143, 505.89pt x 505.89pt>
+<varcap-eps-converted-to.pdf, id=140, 505.89pt x 505.89pt>
 File: varcap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use varcap-eps-converted-to.pdf>
-Package pdftex.def Info: varcap-eps-converted-to.pdf used on input line 562.
+Package pdftex.def Info: varcap-eps-converted-to.pdf used on input line 575.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (11.77116pt too wide) in paragraph at lines 560--564
+Overfull \hbox (11.77116pt too wide) in paragraph at lines 573--577
  [] 
  []
 
-[16] [17 <./shortfallcap-eps-converted-to.pdf> <./varcap-eps-converted-to.pdf>]
-[18] [19] [20] (./Risk decomposition.bbl) [21] (./Risk decomposition.aux) )
+[15] [16 <./shortfallcap-eps-converted-to.pdf> <./varcap-eps-converted-to.pdf>]
+[17] [18] [19] (./Risk decomposition.bbl) [20] (./Risk decomposition.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2341 strings out of 493117
- 32709 string characters out of 6135432
- 99552 words of memory out of 5000000
- 5751 multiletter control sequences out of 15000+600000
+ 2345 strings out of 493117
+ 32748 string characters out of 6135432
+ 99561 words of memory out of 5000000
+ 5755 multiletter control sequences out of 15000+600000
  10950 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,34p,960b,2587s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,34p,826b,2588s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
@@ -386,10 +395,10 @@ live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Risk decomposition.pdf" (21 pages, 411101 bytes).
+Output written on "Risk decomposition.pdf" (20 pages, 411772 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 242 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
