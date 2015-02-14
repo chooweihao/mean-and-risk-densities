@@ -175,7 +175,7 @@ Endpoints of VaR layers are VaRs or percentiles. VaR endpoints adjust to the sha
 
 \cite{wang1996pct} consider layers indexed on the absolute scale using 
 $$
-x=\int_0^\infty (x>k) \de k \;,
+x=\int_0^x 1\de k=\int_0^\infty (x>k) \de k \;,
 $$
 hence the $k$-layer of $x$ is $(x>k)\de k$. The probability of reaching the $k$-layer is $1-F(k)$ and depends on $F$. As a result the means and risks of the $k$-layers are not comparable across loss distributions.
 
