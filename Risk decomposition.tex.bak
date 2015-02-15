@@ -120,9 +120,9 @@ Assuming $x$ is a continuous random variable with distribution function $F$, the
 
 Loss layers are important insurance and reinsurance quantities, particularly for property and casualty. Insurance and excess--of--loss reinsurance typically cover the loss layer between an excess and a limit. Capital shortfall is the loss layer starting from available capital. Layer means, and risks, are  critical inputs to pricing, capital and risk decisions.
 
-This paper develops observations made in \cite{wang1996pct} by defining layers on the percentile or value-at-risk (VaR) scale. VaRs adjust to the shape and scale of the loss distribution, and hence provide comparability across loss distributions. VaRs are standard references in insurance and financial markets. For example Solvency II insurance regulation applies $90\%$ and $99.5\%$ VaRs \citep{eling2007solvency} in capital requirements. Banking regulations Basel II and more recently Basel III also reference VaRs in risk measurement \citep{chernobai2008operational}.
+This paper develops observations made in \cite{wang1996pct} by defining layers on the percentile or value-at-risk (VaR) scale. VaRs adjust to the shape and scale of the loss distribution, and hence provide comparability across loss distributions. VaRs are standard references in insurance and financial markets. For example Solvency II insurance regulation applies $90\%$ and $99.5\%$ VaRs \citep{eling2007solvency} in capital requirements. Banking regulations Basel II and more recently Basel III also references VaRs in risk measurement \citep{chernobai2008operational}.
 
-Developments in this paper yield a framework to form optimal pricing, capital and risk decisions. Focus is usually placed on layers with large mean or risk. The framework yields solutions and insights to insurance and financial problems which are difficult to express and solve using existing statistical methods.
+Developments in this paper yield a framework to make optimal pricing, capital and risk decisions. Focus is usually placed on layers with large mean or risk. The framework yields solutions and insights to insurance and financial problems which are difficult to express and solve using existing statistical methods.
 
 
 Remaining sections of this paper are structured as follows. Section \aref{smotivating} provides a motivating example for the remaining development of this paper by considering an order sample. Sections \aref{smeansetup} to \aref{smeaneg} formalise and discuss layer means or ``mean densities." Risk densities are covered in sections \aref{srisksetup} to \aref{sriskeg}. Remaining sections apply mean and risk densities to optimise pricing, risk and capital decisions.
@@ -131,11 +131,10 @@ Remaining sections of this paper are structured as follows. Section \aref{smotiv
 
 \section{Motivating example}\label{smotivating}
 
-Whilst \eref{layers} provides the key initial mathematical result, the following example motivates remaining developments in this paper. 
 
 Consider $100$ ordered observations of an insurance loss $x$: $\ell_1<\ell_2<\ldots<\ell_{100}$. The statistics $\ell_{i+1}-\ell_i$ and $(100-i)(\ell_{i+1}-\ell_i)$ are called the spacing and normalised spacing, respectively, in the order statistics \citep{shaked2007stochastic}. Spacings are of interest in engineering, for example corresponding to elapsed times between successive  failures of components forming a system.
 
-This paper uses spacings to define layers of an insurance loss. Analyzing mean and risk values of spacings yields solutions to common pricing, risk and capital decisions. The analysis develops and exploits the following straightforward result for the sample mean of $x$:
+This paper uses spacings  to analyse mean and risk over layers of an insurance loss. The analysis yields solutions to common pricing, risk and capital decisions.  The framework  develops and exploits the following straightforward result for the sample mean of $x$:
 \begin{equation}\label{mean}
 \bar{x}=   \ell_1 + \frac{99}{100} (\ell_2-\ell_1) +\ldots + \frac{100-i}{100} (\ell_{i+1}-\ell_i)+\ldots +\frac{1}{100}(\ell_{100}-\ell_{99})  \;.
 \end{equation}
@@ -167,21 +166,26 @@ Distorted probabilities shape layer means, yield distorted risk measures \citep{
 
 \section{VaR layers}\label{smeansetup}
 
-The following modifies \eref{layers} based on the motivating example in \sref{smotivating}. Consider a continuous random loss $x\geq 0$ with distribution function $F$ and inverse distribution function $F^-$. The $\alpha$-Value-at-Risk (VaR$_\alpha$) of $x$ is denoted $V_\alpha\equiv F^-(\alpha)$ for $0\leq\alpha\leq 1$. Expressing layers using VaRs yields the modification to \eref{layers}
+The following modifies observations made by \cite{wang1996pct} based on the motivating example in \sref{motivating}. Again consider a continuous random loss $x\geq 0$ with distribution function $F$. Define the $\alpha$-Value-at-Risk (VaR$_\alpha$) of $x$ as $V_\alpha\equiv F^-(\alpha)$ for $0\leq\alpha\leq 1$, where $F^-$ is the inverse distribution function of $x$.
+
+Modify the result in \eref{layers} by defining layers on VaRs as opposed to absolute amounts:
 \begin{equation}\label{varlayer}
 x=\int_0^1 \de L_\alpha = \int_0^1  L'_\alpha \de \alpha = \int_0^1 (x>V_\alpha)V_\alpha' \de \alpha \cq
 L_\alpha  \equiv \min(x,V_\alpha)  \;,
 \end{equation}
-where $L_\alpha$ is now indexed on VaR probabilities rather than absolute loss amounts. $\de L_\alpha$ represents the VaR$_\alpha$ layer $[V_\alpha,V_{\alpha+\de\alpha}]$, and corresponds to layer $[\ell_{\alpha n},\ell_{\alpha n+1}]$ in \sref{smotivating} assuming $n\rightarrow \infty$ to the extent that there is no sampling error. The width of the VaR$_\alpha$ layer is $V_{\alpha+\de\alpha}-V_\alpha \approx V_\alpha' \de \alpha$ and $V_\alpha'$ is called the VaR--spacing,  the continuous analogue to the discrete spacing $\ell_{i+1}-\ell_i$.
+where $V_\alpha'$ is the derivative of $V_\alpha$ with respect to $\alpha$.
 
 
-The VaR layer over the percentile interval $[\alpha,\beta]$ is
+
+The VaR layer corresponding to percentile interval $[\alpha,\beta]$ is defined as
 $$
-\int_\alpha^\beta \de L_\pi = L_\beta-L_\alpha = \min(V_\beta,x)-\min(V_\alpha,x) \;,
+L_\beta-L_\alpha = \min(V_\beta,x)-\min(V_\alpha,x)\ .
 $$
-and is called the VaR$_{[\alpha,\beta]}$ layer of $x$. 
-
-
+\fref{fix} plots a typical VaR layer as a function of $x$ on both the $x$ and percentile scale.   For small  intervals $[\alpha,\alpha+\de\alpha]$ the VaR layer is
+$$
+\de L_\alpha \approx L_{\alpha+\de\alpha}-L_\alpha =\ell_\alpha \de\alpha = (x>V_\alpha)V_\alpha'\de\alpha\ ,
+$$
+called the $\mathrm{VaR}_\alpha$ layer and corresponds to the layer $[\ell_{i+1},\ell_i]$ in \sref{sintroduction}.  The $\mathrm{VaR}_\alpha$ layer has width $V_\alpha'\de\alpha\approx V_{\alpha+\de\alpha}-V_\alpha $ and  $V_\alpha'$ is called the VaR--spacing,  the continuous analogue to the discrete spacing $\ell_{i+1}-\ell_i$ in \sref{sintroduction}.
 
 VaR layers are important for insurance calculations. For example the
 $
@@ -192,9 +196,13 @@ layer is the insured loss for a policy with deductible $V_\alpha$ and limit $V_{
 
 From \eref{varlayer}, any random variable $x\ge 0$ can be thought of as a sum of  $\mathrm{VaR}_\alpha$ layers over $0\le\alpha\le 1$. This paper uses \eref{varlayer} to decompose the mean and risk of $x$ across VaR layers. As noted in \sref{sintroduction}, layers are important as they represent insurance and reinsurance coverages, and their mean and risk values are critical inputs to pricing, capital and risk management decisions.
 
-Endpoints of VaR layers are VaRs or percentiles. VaR endpoints adjust to the shape and scale of the loss distribution. The probability of the loss reaching the $\mathrm{VaR}_\alpha$ layer is fixed at $\alpha$, hence the mean and risk of a VaR layer are comparable across loss distributions. In contrast layers indexed on the absolute scale in \cite{wang1996pct} are at different probability thresholds depending on the loss distribution. 
+Endpoints of VaR layers are VaRs or percentiles. VaR endpoints adjust to the shape and scale of the loss distribution. The probability of the loss reaching the $\mathrm{VaR}_\alpha$ layer is fixed at $\alpha$, hence the mean and risk of a VaR layer are comparable across loss distributions.
 
-
+\cite{wang1996pct} consider layers indexed on the absolute scale using
+$$
+x=\int_0^x 1\de k=\int_0^\infty (x>k) \de k \;,
+$$
+hence the $k$-layer of $x$ is $(x>k)\de k$. The probability of reaching the $k$-layer is $1-F(k)$ and depends on $F$. As a result the means and risks of the $k$-layers are not comparable across loss distributions.
 
 \section{The mean density}
 

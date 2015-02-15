@@ -1,5 +1,12 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Chernobai, Rachev, and Fabozzi}{Chernobai
+  et~al.}{2008}]{chernobai2008operational}
+Chernobai, A.~S., S.~T. Rachev, and F.~J. Fabozzi (2008).
+\newblock {\em Operational risk: a guide to Basel II capital requirements,
+  models, and analysis}, Volume 180.
+\newblock John Wiley \& Sons.
+
 \bibitem[\protect\citeauthoryear{Choo and De~Jong}{Choo and
   De~Jong}{2009}]{choo2009loss}
 Choo, W. and P.~De~Jong (2009).
@@ -12,22 +19,11 @@ Eling, M., H.~Schmeiser, and J.~Schmit (2007).
 \newblock The solvency ii process: Overview and critical analysis.
 \newblock {\em Risk Management and Insurance Review\/}~{\em 10\/}(1), 69.
 
-\bibitem[\protect\citeauthoryear{Evans}{Evans}{2001}]{evans2001exposure}
-Evans, J. (2001).
-\newblock Exposure rating loss layers: Unifying the property perspective of
-  severity with the l iab ility perspective of frequency.
-\newblock {\em Including the Reserves Call Papers\/}, 493.
-
 \bibitem[\protect\citeauthoryear{Hogg and Klugman}{Hogg and
   Klugman}{2009}]{hogg2009loss}
 Hogg, R.~V. and S.~A. Klugman (2009).
 \newblock {\em Loss distributions}, Volume 249.
 \newblock John Wiley \& Sons.
-
-\bibitem[\protect\citeauthoryear{Salzmann}{Salzmann}{1963}]{salzmann1963rating}
-Salzmann, R.~E. (1963).
-\newblock Rating by layer of insurance.
-\newblock {\em PC, 4S\/}, 15--26.
 
 \bibitem[\protect\citeauthoryear{Shaked and Shanthikumar}{Shaked and
   Shanthikumar}{2007}]{shaked2007stochastic}

@@ -7,15 +7,6 @@
   publisher={John Wiley \& Sons}
 }
 
-@book{chernobai2008operational,
-  title={Operational risk: a guide to Basel II capital requirements, models, and analysis},
-  author={Chernobai, Anna S and Rachev, Svetlozar T and Fabozzi, Frank J},
-  volume={180},
-  year={2008},
-  publisher={John Wiley \& Sons}
-}
-
-
 
 @article{zhou2010dependence,
   title={Dependence structure of risk factors and diversification effects},
