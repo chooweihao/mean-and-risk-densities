@@ -1,109 +1,43 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-## Intermediate documents:
-*.dvi
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+# Folder config file
+Desktop.ini
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.brf
-*.run.xml
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-## Auxiliary and intermediate files from other packages:
+# Windows shortcuts
+*.lnk
 
-# algorithms
-*.alg
-*.loa
+# =========================
+# Operating System Files
+# =========================
 
-# amsthm
-*.thm
+# OSX
+# =========================
 
-# beamer
-*.nav
-*.snm
-*.vrb
+.DS_Store
+.AppleDouble
+.LSOverride
 
-#(e)ledmac/(e)ledpar
-*.end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+# Thumbnails
+._*
 
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
-# hyperref
-*.brf
-
-# listings
-*.lol
-
-# makeidx
-*.idx
-*.ilg
-*.ind
-*.ist
-
-# minitoc
-*.maf
-*.mtc
-*.mtc0
-
-# minted
-*.pyg
-
-# morewrites
-*.mw
-
-# nomencl
-*.nlo
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
-
-# todonotes
-*.tdo
-
-# xindy
-*.xdy
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
