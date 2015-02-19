@@ -99,17 +99,21 @@ Layers, distortion, value-at-risk, spacing, excess-of-loss, mean density, risk d
 
 \section{Introduction}\label{sintroduction}
 
- \cite{wang1996pct} defines the layer $[k,k+\de k]$ of random loss $x\ge 0$ as the amount of $x$ in excess of $k$ with  the excess  capped at $k+\de k$.   Thus the layer is 
+ \cite{wang1996pct} defines the layer $[k,k+\de k]$ of random loss $x\ge 0$ as the amount of $x$ in excess of $k$ with  the excess  capped at $\de k$.   Thus the layer is
  $
- L_{k+\de k} - L_k  
+ L_{k+\de k} - L_k
  $
  where $L_k \equiv \min(x,k)$.
 Then $x$ is the sum of layers covering $[0,\infty]$ as illustrated in \fref{flayer}. Letting $\de k\rightarrow 0$ yields
 \begin{equation}\label{layers}
 x= \int_0^\infty \de L_k = \int_0^\infty L_k' \de k = \int_0^\infty (x>k) \de k \;,
 \end{equation}
-where  $\de L_k$ is the infinitesimally small layer $[k,k+\de k]$ and $(x>k)$ is an indicator function equal to 1 if $x>k$ and 0 otherwise.  Equation \eref{layers} decomposes $x$ into infinitely many comonotonic layers noting $L_k$ is non-decreasing in $x$.  A  proof of \eref{layers} follows by noting the final integral in \eref{layers} is $\int_0^x \de k = x$.
+where  $\de L_k$ is the infinitesimally small layer $[k,k+\de k]$ and $(x>k)$ is an indicator function equal to 1 if $x>k$ and 0 otherwise. A  proof of \eref{layers} follows by noting the final integral in \eref{layers} is $\int_0^x \de k = x$. 
 
+Equation \eref{layers} decomposes $x$ into infinitely many layers. Each layer is a random variable and is comonotonic with all other layers since $L_k$ is non-decreasing in $x$. Integrating these layers over an arbitrary interval yields a larger layer:
+$$
+\int_a^b \de L_k = L_b-L_a = \min(x,b)-\min(x,a) \;.
+$$  
 If $x$ has distribution function $F$, the mean of layer $\de L_k $ is $\{1-F(k)\} \de k$. \cite{wang1996pct} calls $1-F$ the layer premium density of $x$ as it identifies the insurance premium of each layer and integrates to the overall mean: $\int_0^\infty \{1-F(k) \}\de k = \E(x)$ where $\E$ is the expectation. In addition \cite{wang1996pct} distorts the layer premium density by replacing original probabilities with distorted probabilities. The distorted layer premium density delivers premiums with a risk loading.
 
 \begin{figure}
@@ -136,24 +140,24 @@ Remaining sections of this paper are structured as follows. Section \aref{smotiv
 
 \section{Motivating example}\label{smotivating}
 
-Whilst \eref{layers} provides the key initial mathematical result, the following example provides further motivation for the  developments in this paper. 
+Whilst \eref{layers} provides the key initial mathematical result, the following example provides further motivation for the  developments in this paper.
 
-Consider $100$ ordered observations of an insurance loss $x$: $\ell_1<\ell_2<\ldots<\ell_{100}$. The statistics $\ell_{i+1}-\ell_i$ and $(100-i)(\ell_{i+1}-\ell_i)$ are called the spacing and normalised spacing, respectively, in the order statistics \citep{shaked2007stochastic}. Spacings are of interest in engineering, for example corresponding to elapsed times between successive  failures of components forming a system.
+Consider $100$ ordered observations of an insurance loss $x$: $x_1<x_2<\ldots<x_{100}$. The statistics $x_{i+1}-x_i$ and $(100-i)(x_{i+1}-x_i)$ are called the spacing and normalised spacing, respectively, in the order statistics \citep{shaked2007stochastic}. Spacings are of interest in engineering, for example corresponding to elapsed times between successive  failures of components forming a system.
 
-Spacings define layers of an insurance loss.In terms of spacings, the sample mean of  $x$ is
+Spacings define layers of an insurance loss. In terms of spacings, the sample mean of  $x$ is
 \begin{equation}\label{mean}
-\bar{x}=   \ell_1 + \frac{99}{100} (\ell_2-\ell_1) +\ldots + \frac{100-i}{100} (\ell_{i+1}-\ell_i)+\ldots +\frac{1}{100}(\ell_{100}-\ell_{99})  \;,
+\bar{x}=   x_1 + \frac{99}{100} (x_2-x_1) +\ldots + \frac{100-i}{100} (x_{i+1}-x_i)+\ldots +\frac{1}{100}(x_{100}-x_{99})  \;,
 \end{equation}
-while the mean of layer $[\ell_i,\ell_{i+1}]$ is
+of which the mean contribution of layer $[x_i,x_{i+1}]$ given the sample is
 $$
-m_i \equiv \left(\frac{100-i}{100}\right) (\ell_{i+1}-\ell_i)\ ,
+m_i \equiv \left(\frac{100-i}{100}\right) (x_{i+1}-x_i)\ ,
 $$
-then  $m_i$ is the spacing $\ell_{i+1}-\ell_i$ multiplied by the proportion or probability  $1-i/100$ of an observation exceeding $\ell_i$.  Adding up all $m_i$  yields the overall mean $\bar{x}$.  A layer is a portion of every loss outcome crossing an interval.
+then  $m_i$ is the spacing $x_{i+1}-x_i$ multiplied by the proportion or probability  $1-i/100$ of an observation exceeding $x_i$.  Adding up all $m_i$  yields the overall mean $\bar{x}$.  A layer is a portion of every loss outcome crossing an interval.
 
 The following are important and exploitable points of the above setup:
 \bi
 
-\i Two  factors drive the magnitude  of $m_i$:   the exceedance  probability   $1-i/100$ and spacing $\ell_{i+1}-\ell_i$.  The exceedance probability decreases  with $i$.   The spacing may increase or decrease.   If the distribution is right skewed, as is typical for insurance losses, increasing $i$, leads to increased spacings.   Greater skewness implies larger spacings.    The overall behaviour of $m_i$ characterises the shape of the loss distribution.
+\i Two  factors drive the magnitude  of $m_i$:   the exceedance  probability   $1-i/100$ and spacing $x_{i+1}-x_i$.  The exceedance probability decreases  with $i$.   The spacing may increase or decrease.   If the distribution is right skewed, as is typical for insurance losses, increasing $i$, leads to increased spacings.   Greater skewness implies larger spacings.    The overall behaviour of $m_i$ characterises the shape of the loss distribution.
 
 \i Loss layers are expressed using sample values representing empirical percentiles or values-at-risk (VaRs) of $x$. For example the top 5 loss layer covers losses above the $95$th percentile. In contrast, current literature expresses loss layers in absolute amounts, for example between 1 and 2 million dollars. VaR layers are considered in this paper as they adjust to the shape and scale of the loss distribution, and can be interpreted probabilistically.
 
@@ -162,7 +166,7 @@ The following are important and exploitable points of the above setup:
 
 \i The risk-adjusted layer mean replaces the exceedance probability $1-i/100$ in $m_i$ with a distorted probability $1-\Phi(i/100)$, yielding
 $$
-\tilde{m}_i = \left\{1-\Phi\left(\frac{i}{100}\right)\right\} (\ell_{i+1}-\ell_i)\ .
+\tilde{m}_i = \left\{1-\Phi\left(\frac{i}{100}\right)\right\} (x_{i+1}-x_i)\ .
 $$
 Distorted probabilities shape layer means, yield distorted risk measures \citep{wang1996pct}  and are used in cumulative prospect theory \citep{tversky1992apt}.
 
@@ -172,26 +176,28 @@ Distorted probabilities shape layer means, yield distorted risk measures \citep{
 
 \section{VaR layers}\label{smeansetup}
 
-The following modifies \eref{layers} based on the motivating example in \sref{smotivating}. Consider a continuous random loss $x\geq 0$ with distribution function $F$ and inverse distribution function $F^-$. For $0\le\alpha\le 1$, the $\alpha$-Value-at-Risk (VaR$_\alpha$) of $x$ is  $V_\alpha\equiv F^-(\alpha)$  and 
+The following modifies the layer decomposition of $x$ in \eref{layers} using the motivating example in \sref{smotivating}. Consider a continuous random loss $x\geq 0$ with distribution function $F$ and inverse distribution function $F^-$. For $0\le\alpha\le 1$, the $\alpha$-Value-at-Risk (VaR$_\alpha$) of $x$ is  $V_\alpha\equiv F^-(\alpha)$  and
 \begin{equation}\label{varlayer}
 x=\int_0^1 \de L_\alpha = \int_0^1  L'_\alpha \de \alpha = \int_0^1 (x>V_\alpha)V_\alpha' \de \alpha \cq
 L_\alpha  \equiv \min(x,V_\alpha)  \;,
 \end{equation}
-where $L_\alpha$ is  indexed on VaR probabilities rather than absolute loss amounts. Then $\de L_\alpha$ represents the VaR$_\alpha$ layer $[V_\alpha,V_{\alpha+\de\alpha}]$, and corresponds to layer $[\ell_{\alpha n},\ell_{\alpha n+1}]$ in \sref{smotivating} assuming $n\rightarrow \infty$. The width of the VaR$_\alpha$ layer is $V_{\alpha+\de\alpha}-V_\alpha \approx V_\alpha' \de \alpha$ and $V_\alpha'$ is called the VaR--spacing,  the continuous analogue to the discrete spacing $\ell_{i+1}-\ell_i$.
+where $L_\alpha$ is  indexed on VaR thresholds or exceedance probabilities instead of absolute loss amounts as in \eref{layers}. This definition of $L_\alpha$ is applied to remaining developments in this paper. Then $\de L_\alpha$ represents the VaR$_\alpha$ layer $[V_\alpha,V_{\alpha+\de\alpha}]$, and corresponds to layer $[\ell_{\alpha n},\ell_{\alpha n+1}]$ in \sref{smotivating} assuming $n\rightarrow \infty$. The width of the VaR$_\alpha$ layer is $V_{\alpha+\de\alpha}-V_\alpha \approx V_\alpha' \de \alpha$ and $V_\alpha'$ is called the VaR--spacing,  the continuous analogue to the discrete spacing $\ell_{i+1}-\ell_i$.
+
+
+Endpoints of VaR layers self-adjust to the shape and scale of the loss distribution. The probability of the loss reaching the VaR$_\alpha$ layer is fixed at $\alpha$, hence the mean and risk of VaR layers are comparable across loss distributions. In contrast layers indexed on the absolute scale as in \sref{sintroduction} are at different probability thresholds depending on the loss distribution.
+
 
 
 The VaR$_{[\alpha,\beta]}$ layer of $x$ is the random variable
 $$
 \int_\alpha^\beta \de L_\pi = L_\beta-L_\alpha = \min(V_\beta,x)-\min(V_\alpha,x) \;.
 $$
-This is the insured loss for a policy with deductible $V_\alpha$ and limit $V_{\beta}$, or the reinsured loss under an excess--of--loss reinsurance arrangement. When capital $V_\alpha$ is held against loss $x$, then $L_\alpha$  is the capital used and  $L_1-L_\alpha$ is the capital shortfall. VaR layers  characterise losses. For example the $L_1-L_\alpha$ layer represents additional losses contributed by the highest $1-\alpha$ portion of possible outcomes.
-
-Endpoints of VaR layers are VaRs or percentiles. VaR endpoints adjust to the shape and scale of the loss distribution. The probability of the loss reaching the $\mathrm{VaR}_\alpha$ layer is fixed at $\alpha$, hence the mean and risk of VaR layers are comparable across loss distributions. In contrast layers indexed on the absolute scale as in \sref{sintroduction} are at different probability thresholds depending on the loss distribution.
+This is for example the insured loss for a policy with deductible $V_\alpha$ and limit $V_{\beta}$, or the reinsured loss under an excess--of--loss reinsurance arrangement. When capital $V_\alpha$ is held against loss $x$, then $L_\alpha$  is the capital used and  $L_1-L_\alpha$ is the capital shortfall. VaR layers  characterise losses. For example the $L_1-L_\alpha$ layer represents additional losses contributed by the highest $1-\alpha$ portion of possible outcomes.
 
 
-From \eref{varlayer}, any random variable $x\ge 0$ can be thought of as a sum of  $\mathrm{VaR}_\alpha$ layers over $0\le\alpha\le 1$. This paper uses \eref{varlayer} to decompose and analyse the mean and risk of $x$ across VaR layers. 
+From \eref{varlayer}, any random variable $x\ge 0$ can be thought of as a sum of  $\mathrm{VaR}_\alpha$ layers over $0\le\alpha\le 1$. This paper uses \eref{varlayer} to decompose and analyse the mean and risk of $x$ across VaR layers. The analysis yields solutions and insights to common pricing, risk and capital problems. 
 
- 
+
 
 
 
@@ -203,9 +209,9 @@ The mean density  is defined analogous to \eref{mean}:
 m_\alpha \equiv \E(L'_\alpha)=\E\left\{(x>V_\alpha)V_\alpha' \right\}
 =(1-\alpha)V_\alpha'\cq 0\le\alpha\le 1\ ,
 \end{equation}
-where $\E$ is the expectation given $\alpha$ is uniform. The mean density $m_\alpha$ is the product of $1-\alpha$, the probability of $x$ reaching the $\mathrm{VaR}_\alpha$ layer, and the VaR-spacing $V_\alpha'$, measuring layer width.
+where $\E$ is the expectation. The mean density $m_\alpha$ is the product of $1-\alpha$, the probability of $x$ reaching the $\mathrm{VaR}_\alpha$ layer, and the VaR-spacing $V_\alpha'$, measuring layer width.
 
-As $\alpha$ increases, $1-\alpha$ decreases reflecting reduced likelihood of reaching higher layers. On the other hand for a right skewed loss distribution,  $V_\alpha'$ increases  where the probability density is decreasing. The behaviour of the mean density depends on the relative movements in $1-\alpha$ and $V_\alpha'$. For example, the exponential distribution has a constant mean density whereas the Pareto distribution has an increasing mean density due to more rapidly increasing VaR spacings. 
+As $\alpha$ increases, $1-\alpha$ decreases reflecting reduced likelihood of reaching higher layers. On the other hand for a right skewed loss distribution,  $V_\alpha'$ increases  where the probability density is decreasing. The behaviour of the mean density depends on the relative movements in $1-\alpha$ and $V_\alpha'$. For example, the exponential distribution has a constant mean density whereas the Pareto distribution has an increasing mean density due to more rapidly increasing VaR spacings. These examples are discussed below.
 
 Using \eref{varlayer},
 $$
@@ -288,7 +294,7 @@ If $f$ is the density corresponding to the distribution $F$ then the
 $$
 m_\alpha =  \frac{1-F(V_\alpha)}{f(V_\alpha)} \;,
 $$
-and hence the mean density is the reciprocal of the hazard rate at percentile $\alpha$ \citep{hogg2009loss}. The result follows by noting $F(V_\alpha)=\alpha$ and $V_\alpha'=1/f(V_\alpha)$.  
+and hence the mean density is the reciprocal of the hazard rate at percentile $\alpha$ \citep{hogg2009loss}. The result follows by noting $F(V_\alpha)=\alpha$ and $V_\alpha'=1/f(V_\alpha)$.
 
 
 
@@ -309,10 +315,10 @@ $$
 \Ex(x)-\E(x)= \E\left\{ x\Phi'(u) \right\} - \E(x) =\cov\left\{x,\Phi'(u) \right\}
 = \sigma_x \sigma_{\Phi'} \cor\left\{x,\Phi'(u)\right\}\;,
 $$
-where  $u\equiv F(x)$.   
-which is the loss aversion premium \citep{choo2009loss}, where $\cov$ and $\cor$ compute covariance and correlation under $F$, and $\sigma_x$ and $\sigma_\phi$ are standard deviations. 
+where  $u\equiv F(x)$.
+which is the loss aversion premium \citep{choo2009loss}, where $\cov$ and $\cor$ compute covariance and correlation under $F$, and $\sigma_x$ and $\sigma_\phi$ are standard deviations.
 
-Since $x=\int_0^1\de L_\alpha$, the distorted risk 
+Since $x=\int_0^1\de L_\alpha$, the distorted risk
  of a  VaR layer  is  the difference between distorted and original mean values:
 \begin{equation}\label{riskcont}
 r_\alpha \equiv \Ex(L'_\alpha)-\E(L'_\alpha) = \{1-\Phi(\alpha)\}V_\alpha'-(1-\alpha)V_\alpha'=\{\alpha-\Phi(\alpha)\}V_\alpha'\ .
@@ -348,19 +354,20 @@ r_\alpha^* \equiv \frac{r_\alpha}{m_\alpha} = \frac{\{\alpha-\Phi(\alpha)\}V_\al
 \end{equation}
 Risk ratios indicate the level of risk relative to mean. Risk ratios depend  on the distortion operator $\Phi$ but are independent of the loss distribution since VaR spacing $V_\alpha'$ is a multiplicative factor in both $r_\alpha$ and $m_\alpha$.
 
-Risk ratios are larger at higher layers, since 
+Risk ratios are larger at higher layers, since
 $$
 \frac{\de r_\alpha^*}{\de \alpha} = \frac{1-\Phi(\alpha)-(1-\alpha)\Phi'(\alpha)}{(1-\alpha)^2} \geq 0 \;.
 $$
-The inequality holds since 
+The inequality holds since
 $$1-\Phi(\alpha)=\int_\alpha^1 \Phi'(u) \de u\geq \int_\alpha^1 \Phi'(\alpha)\de u=(1-\alpha)\Phi'(\alpha)\ ,
 $$ noting $\Phi$ is convex implying $\Phi'$ is increasing. Thus higher VaR layers are riskier than lower VaR layers as a proportion of mean values. End points of risk ratios are $r_0^* = 0$ and $r_1^*=\Phi'(1)-1$.
 
 
 
-Given the risk ratios $r^*_\alpha$, the overall risk and risk ratio of a VaR layer is 
+Given the risk ratios $r^*_\alpha$, the overall risk and risk ratio of a VaR layer is
 $$
-R_{[\alpha,\beta]} = \int_\alpha^\beta r_\pi^* m_\pi \de \pi\ .
+\int_\alpha^\beta r_\pi^* m_\pi \de \pi 
+\cq \frac{\int_\alpha^\beta r_\pi^* m_\pi \de \pi}{\int_\alpha^\beta  m_\pi \de \pi}    \; .
 $$
 Hence the overall risk ratio is a weighted average of individual risk ratios, with weights given by mean density values. The overall risk ratio and hence risk are high if the mean density is larger at higher layers since larger risk ratios are then weighted more heavily. For example the Pareto has a higher risk and risk ratio than the uniform, exponential and Weibull due to an increasing mean density. Examples are further discussed in the next section.
 
@@ -491,7 +498,12 @@ Conflicting considerations are involved when deciding how much capital to hold. 
 
 Higher risk requires more capital. Understanding key sources of risk yields optimal risk management decisions to reduce required capital, such as reinsurance purchase and limiting loss coverage.
 
-
+The following notation is used in the following sections:
+$$
+M_{[\alpha,\beta]} = \int_\alpha^\beta m_\pi \de \pi \cq
+R_{[\alpha,\beta]} = \int_\alpha^\beta r_\pi \de \pi \cq
+R^*_{[\alpha,\beta]} = \frac{R_{[\alpha,\beta]}}{M_{[\alpha,\beta]}} \;.
+$$
 
 \section{Pricing loss layers}
 
@@ -515,21 +527,21 @@ Refer to mean and risk densities in \fref{frisk}. The premium $M_{[a,b]}+ R_{[a,
 
 \section{Setting limits on insured loss}
 
-Insurers typically impose a limit $V_l$ on an insured loss to manage risk. The following proposes a solution for $l$. Suppose a profit margin $\pi$ is charged on the mean loss $m_{[0,l]}$, noting only the $[0,l]$-VaR layer is insured. The insurer's risk is $r_{[0,l]}$ with cost $k r_{[0,l]}$, where $k$ is the cost per unit risk. If $r_{[0,l]}$ is the capital held then $k$ is the cost of capital.
+Insurers typically impose a limit $V_l$ on an insured loss to manage risk. The following proposes a solution for $l$. Suppose a profit margin $\pi$ is charged on the mean loss $M_{[0,l]}$, noting only the $[0,l]$-VaR layer is insured. The insurer's risk is $R_{[0,l]}$ with cost $k R_{[0,l]}$, where $k$ is the cost per unit risk. If $R_{[0,l]}$ is the capital held then $k$ is the cost of capital.
 
 A profitable $l$ ensures profit margin exceeds cost of risk in dollar terms:
 $$
-\pi m_{[0,l]} \geq k r_{[0,l]} \cq \frac{r_{[0,l]}}{m_{[0,l]}} = r_{[0,l]}^* \leq \pi/k
+\pi M_{[0,l]} \geq k R_{[0,l]} \cq \frac{R_{[0,l]}}{M_{[0,l]}} = R_{[0,l]}^* \leq \pi/k
 $$
-where $r_{[0,l]}^*$ is the risk ratio over the $[0,l]$-VaR layer. Since $r_{[0,l]}^*$ increases in $l$, $l$ is set to ensure that the insurer's risk ratio does not exceed $\pi/k$, the ratio between profit margin and cost per unit risk. Higher $\pi$ or lower $k$ permits higher loss limit. Write the risk ratio $r_{[0,l]}^*$ as
+where $R_{[0,l]}^*$ is the risk ratio over the $[0,l]$-VaR layer. Since $R_{[0,l]}^*$ increases in $l$, $l$ is set to ensure that the insurer's risk ratio does not exceed $\pi/k$, the ratio between profit margin and cost per unit risk. Higher $\pi$ or lower $k$ permits higher loss limit. Write the risk ratio $R_{[0,l]}^*$ as
 $$
-r_{[0,l]}^* = \frac{\int_0^l m_\alpha r^*_\alpha \de \alpha }{\int_0^l m_\alpha \de\alpha} \cq r^*_\alpha=\frac{\alpha-\Phi(\alpha)}{1-\alpha}
+R_{[0,l]}^* = \frac{\int_0^l m_\alpha r^*_\alpha \de \alpha }{\int_0^l m_\alpha \de\alpha} \cq r^*_\alpha=\frac{\alpha-\Phi(\alpha)}{1-\alpha}
 $$
-where $r_\alpha^*$ increases with $\alpha$ and is independent of the loss distribution. A skewed loss distribution with increasing mean density emphasizes larger values of $r_\alpha^*$, and thus has higher $r_{[0,l]}^*$ given $l$. This implies skewed loss distributions require a lower loss limit.
+where $r_\alpha^*$ increases with $\alpha$ and is independent of the loss distribution. A skewed loss distribution with increasing mean density emphasizes larger values of $r_\alpha^*$, and thus has higher $R_{[0,l]}^*$ given $l$. This implies skewed loss distributions require a lower loss limit.
 
 If $l$ is arbitrarily set then positive profitability requires profit margin
 $$
-\pi \geq k \frac{r_{[0,l]}}{m_{[0,l]}} \;,
+\pi \geq k \frac{R_{[0,l]}}{M_{[0,l]}} \;,
 $$
 the product of the risk cost and risk ratio over $[0,l]$-VaR layer. Increasing either component increases the profit margin.
 
